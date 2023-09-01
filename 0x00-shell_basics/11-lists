@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'Files in current directory' echo -e '\nls -la' echo -e '\ncd ..' echo -e '\nFiles in parent directory' echo -e '\nls -la' echo -e '\ncd /boot' echo -e '\nFiles in /boot directory' echo -e '\nls -la'
+ls -la . ../boot
