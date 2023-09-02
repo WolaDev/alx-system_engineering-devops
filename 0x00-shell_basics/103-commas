@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 | awk '{ORS = (/^[0-9]/) ? "," : "/\n"} END {print ""}'
+ls -ap1 | tr '\n' ',' | sed 's/,$/\n/'
