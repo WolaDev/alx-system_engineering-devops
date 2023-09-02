@@ -1,3 +1,2 @@
 #!/bin/bash
 ls -Ap1 | awk -v ORS=',' '{gsub(/\n/,""); if ($0 == ".." || $0 == ".") {print $0","; next} if (/^[0-9]/) print $0","}' | awk '{gsub(/\//,"/"); if (!/^[0-9]/) print $0","}'
-
