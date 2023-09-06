@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -print | sed 's#.*/##'
+find . -type d -empty -o -type f -empty -exec echo {} \;
